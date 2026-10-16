@@ -1,13 +1,13 @@
 {
   "summary": {
-    "audited_at": "2026-10-16T15:44:19.083527+00:00",
-    "total_kols": 102,
-    "included_kols": 68,
-    "quarantined_kols": 34,
+    "audited_at": "2026-10-16T16:34:02.273567+00:00",
+    "total_kols": 122,
+    "included_kols": 86,
+    "quarantined_kols": 36,
     "pass": 55,
-    "warn": 47,
+    "warn": 67,
     "fail": 0,
-    "total_items": 204,
+    "total_items": 258,
     "mock_items": 0,
     "altered_titles": 0,
     "pool_titles": 0,
@@ -1067,7 +1067,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 【多元資產Talk】AI 漩渦｜半導體股價下挫常態化｜指數波動增但下跌空間不大｜"
+        "RSS 有效，最新标题: 【星級輪證】阿里強於大市守穩$105 吼長身Call輪博動能擴闊"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -2072,7 +2072,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: Indonesia Stocks Sink as MSCI Weighs Ind"
+        "RSS 有效，最新标题: Bloomberg Surveillance 10/16/2026"
       ],
       "issues": [
         {
@@ -2173,6 +2173,510 @@
       "online": [
         "在线验证：频道页身份一致",
         "RSS 有效，最新标题: 特斯拉Roadster這車能飛，背後是這三層真相"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 105,
+      "name": "观视频工作室 Guan Video",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCYfJG6cGfW84FVLuy7semEg",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 看似可有可无的数字人民币，竟是打破平台资本数据垄断的关键一招？ | 对话浙大教授"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 106,
+      "name": "观察者网",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCJncdiH3BQUBgCroBmhsUhQ",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 【两岸圆桌派第48期】诺奖梦碎、选情告急，特朗普遭遇大危机！赖清德蠢蠢欲动要较劲"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 107,
+      "name": "沈逸老师",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCfcPzjuqNxzyyu2ukSBPmeQ",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 108,
+      "name": "黃智賢夜問",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCsgXIOF43ZqgcmLwnKjsndQ",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 辯論敲定10/31！蔣萬安總部成立蔡康永穿黑西裝出席！"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 109,
+      "name": "赖岳谦TV",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCnrxxRlv2ZSSW4ApuEy8C0w",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 《琴定天下》赖岳谦 周玉琴  | 中俄联手 南北包夹！"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 110,
+      "name": "郭正亮頻道",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCSYBgX9pWGiUAcBxjnj6JCQ",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 戰鬥藍還是戰鬥懶？亮哥怒嗆趙少康#shorts @funseeTW @郭正亮頻道"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 111,
+      "name": "中国东南卫视官方频道（海峡新干线）",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCN2e8dLY9KnH-B15LyBM7Fg",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 卢秀燕面临卸任后的政治空窗期，邱毅：失去舞台人气恐下跌#台湾新闻脸"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "handle 缺失"
+        },
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 112,
+      "name": "歪果仁研究协会 Ychina",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCvVIk8oQ2vnZsCi4vR9O4dg",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Living in China Too Long Gave Me Chargin"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 113,
+      "name": "Barrett",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UC1XG7bJnYqta_ezr12WZp7w",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Qualcomm Just Bought Huawei Patents. Her"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 114,
+      "name": "Cyrus Janssen",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCxEQsjgRRfGWiJJu_PDygxw",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Economist Peter Schiff Warns America's N"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 115,
+      "name": "Daniel Dumbrill",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UC6Bl8MTbW9M9MQoPhxbarpw",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: They Turned on Their Own: Are Political "
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 116,
+      "name": "the JaYoe Nation",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UC8Ykci4MKSSdTJYuYp53G7A",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: I Got a Full Medical Checkup in China fo"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 117,
+      "name": "Jerry's Take on China",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UC_DHAzg3miuwH9NMEUCY0Ow",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Monthly Global Wrap Up: the media we're "
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 118,
+      "name": "科技袁人（科技新信号 TechSignal）",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCSgGqt-30oXBq0-n0K-t4Nw",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "handle 缺失"
+        },
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 119,
+      "name": "差评君",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCqlQ5ErufqtQUhkuKj1xngg",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 今年的物化生三項諾獎，多少都帶點邪修氣質"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 120,
+      "name": "IC实验室",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCJ1zX4FZA15dwE2olLAO3-w",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 吃了不烧心：红果日活1.68亿的背后 - IC实验室出品"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 121,
+      "name": "CGTN",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCgrNz-aDmcr2uuto8_DL2jg",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Xi's time in Ulanqab: Exploring Green Co"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 122,
+      "name": "CCTV中国中央电视台",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCcLK3j-XWdGBnt5bR9NJHaQ",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: [金石探文明]石鼓的书法价值 | CCTV"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 123,
+      "name": "China.org.cn 中国网",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCrYhYcDkTcSFhhDSFpYTFCg",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Crossing the pontoon bridge over the Yud"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 124,
+      "name": "鳳凰衛視 Phoenix TV",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UC4vnLYInDvXtLKGOZieMeMw",
+      "configured_active": true,
+      "included": true,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 格力一虎一席談｜ 大V一句差評，是消費監督還是流量審判？｜20261016 #鳳"
       ],
       "issues": [
         {
