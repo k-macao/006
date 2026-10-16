@@ -26,7 +26,7 @@
 
 ---
 
-## 🗂️ KOL 精选名单（102 家）
+## 🗂️ KOL 精选名单（122 家）
 
 ### 英文财经巨头 20 席
 | # | 名称 | 平台 | 领域 |
@@ -68,7 +68,25 @@ Kelvin, Swedish Investor, Preston Pysh, PensionCraft, Maverick, Cameron Stewart,
 - 本次只更新频道配置：未抓取并验证的新频道暂列当前产物的 `inactive_kols`，不凭截图补造视频、日期或分析。后续运行流水线时，取得真实内容并通过审计后才入报。
 - 频道 ID、handle 与核对来源见 [频道新增记录](频道新增记录_20261016.md)；截图中的播放量、直播观众数不作为订阅数，新增频道的 `fans` 暂记 `N/A`。
 
-> 📌 **完整数据**：`kol_data.json`（共 102 家，含 handle/channel_id/fans/field/platform 等）
+### 政论 / 人文 / 科技 / 官媒扩展 20 席（2026-10-16）
+
+用户提交 30 个来源，核实后加入 20 席（`#105`–`#124`），其余 10 个来源因身份无法核实暂未加入。
+
+| 板块 | 频道 |
+|---|---|
+| 时政评论 | `观视频工作室`、`观察者网`、`沈逸老师`、`黃智賢夜問`、`赖岳谦TV`、`郭正亮頻道`、`中国东南卫视官方频道（海峡新干线）` |
+| 海外创作者 | `歪果仁研究协会 Ychina`、`Barrett`、`Cyrus Janssen`、`Daniel Dumbrill`、`the JaYoe Nation`、`Jerry's Take on China` |
+| 产业科技商业 | `科技袁人（科技新信号 TechSignal）`、`差评君`、`IC实验室` |
+| 区域与官媒 | `CGTN`、`CCTV中国中央电视台`、`China.org.cn 中国网`、`鳳凰衛視 Phoenix TV` |
+
+- 身份核对以 YouTube 官方 RSS 复核为主（`feeds/videos.xml?channel_id=UC…` 的 feed 标题即频道显示名），
+  Social Blade 频道页 / 官方频道固定链接作为交叉验证；观测到的更新节奏与用户描述不一致处均据实记录。
+- 新记录 `fans` 暂记 `N/A`（不写入第三方订阅数估算），`active: true` 只表示允许抓取，
+  未抓取验证前暂列 `inactive_kols`，不补造标题、日期或分析。
+- 未加入的 10 个来源（陈平眉山论剑、金灿荣频道、周波、保罗在广东、rt、Lee Barrett、Groovy China、
+  雷叔说事、超级老王、大湾区之声）及原因见 [频道新增记录·政论人文扩展](频道新增记录_20261016_政论人文扩展.md)。
+
+> 📌 **完整数据**：`kol_data.json`（共 122 家，含 handle/channel_id/fans/field/platform 等）
 
 ---
 

@@ -1,8 +1,8 @@
 # 🔍 全频道真实性审计报告（不作伪检查模块）
 
-- **审计时间**：2026-10-16T15:32:43.129572+00:00
-- **KOL 目录**：102（本次入报 61，隔离 41）
-- **判定**：PASS 55　|　WARN 47　|　FAIL 0
+- **审计时间**：2026-10-16T16:03:59.999410+00:00
+- **KOL 目录**：122（本次入报 61，隔离 61）
+- **判定**：PASS 55　|　WARN 67　|　FAIL 0
 - **内容条目**：183 条；模拟/伪链接 0；改写标题 0
 - **在线复核**：未开启
 
@@ -115,6 +115,26 @@
 | 102 | RagaFinance財經台 | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
 | 103 | am730 | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
 | 104 | 點線面 | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 105 | 观视频工作室 Guan Video | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 106 | 观察者网 | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 107 | 沈逸老师 | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 108 | 黃智賢夜問 | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 109 | 赖岳谦TV | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 110 | 郭正亮頻道 | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 111 | 中国东南卫视官方频道（海峡新干线） | 否 | YouTube | **WARN** | 0/0 | handle 缺失；fans 缺失/未填写 |
+| 112 | 歪果仁研究协会 Ychina | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 113 | Barrett | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 114 | Cyrus Janssen | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 115 | Daniel Dumbrill | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 116 | the JaYoe Nation | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 117 | Jerry's Take on China | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 118 | 科技袁人（科技新信号 TechSignal） | 否 | YouTube | **WARN** | 0/0 | handle 缺失；fans 缺失/未填写 |
+| 119 | 差评君 | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 120 | IC实验室 | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 121 | CGTN | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 122 | CCTV中国中央电视台 | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 123 | China.org.cn 中国网 | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
+| 124 | 鳳凰衛視 Phoenix TV | 否 | YouTube | **WARN** | 0/0 | fans 缺失/未填写 |
 
 ---
 *本报告由 `src/authenticity_check.py` 自动生成，仅供真实性核查，不构成投资建议。*

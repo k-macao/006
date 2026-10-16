@@ -21,6 +21,32 @@ REQUESTED_CHANNELS = {
 }
 
 
+# Identities checked against the sources in 频道新增记录_20261016_政论人文扩展.md.
+# 编号 105-124：时政评论 / 海外创作者 / 产业科技 / 区域与官媒四个扩展板块。
+NEW_CHANNELS = {
+    '观视频工作室 Guan Video': (105, '@guanvideo', 'UCYfJG6cGfW84FVLuy7semEg'),
+    '观察者网': (106, '@guancha021', 'UCJncdiH3BQUBgCroBmhsUhQ'),
+    '沈逸老师': (107, '@沈逸老师-g8p', 'UCfcPzjuqNxzyyu2ukSBPmeQ'),
+    '黃智賢夜問': (108, '@黃智賢夜問', 'UCsgXIOF43ZqgcmLwnKjsndQ'),
+    '赖岳谦TV': (109, '@TV-od5nb', 'UCnrxxRlv2ZSSW4ApuEy8C0w'),
+    '郭正亮頻道': (110, '@郭正亮頻道', 'UCSYBgX9pWGiUAcBxjnj6JCQ'),
+    '中国东南卫视官方频道（海峡新干线）': (111, None, 'UCN2e8dLY9KnH-B15LyBM7Fg'),
+    '歪果仁研究协会 Ychina': (112, '@ychinamedia', 'UCvVIk8oQ2vnZsCi4vR9O4dg'),
+    'Barrett': (113, '@barrettyt', 'UC1XG7bJnYqta_ezr12WZp7w'),
+    'Cyrus Janssen': (114, '@cyrusjanssen', 'UCxEQsjgRRfGWiJJu_PDygxw'),
+    'Daniel Dumbrill': (115, '@danieldumbrill', 'UC6Bl8MTbW9M9MQoPhxbarpw'),
+    'the JaYoe Nation': (116, '@jayoenation', 'UC8Ykci4MKSSdTJYuYp53G7A'),
+    "Jerry's Take on China": (117, '@jerrystakeonchina799', 'UC_DHAzg3miuwH9NMEUCY0Ow'),
+    '科技袁人（科技新信号 TechSignal）': (118, None, 'UCSgGqt-30oXBq0-n0K-t4Nw'),
+    '差评君': (119, '@xpinman', 'UCqlQ5ErufqtQUhkuKj1xngg'),
+    'IC实验室': (120, '@ICLAB', 'UCJ1zX4FZA15dwE2olLAO3-w'),
+    'CGTN': (121, '@cgtn', 'UCgrNz-aDmcr2uuto8_DL2jg'),
+    'CCTV中国中央电视台': (122, '@cctv', 'UCcLK3j-XWdGBnt5bR9NJHaQ'),
+    'China.org.cn 中国网': (123, '@chinaorgcn', 'UCrYhYcDkTcSFhhDSFpYTFCg'),
+    '鳳凰衛視 Phoenix TV': (124, '@phoenixtvglobal', 'UC4vnLYInDvXtLKGOZieMeMw'),
+}
+
+
 class CatalogTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -39,6 +65,24 @@ class CatalogTests(unittest.TestCase):
                 self.assertIs(True, kol['active'])
                 self.assertEqual('YouTube', kol['platform'])
                 self.assertIn(kol['language'], ('中文', '英文'))
+                failures = [i for i in check_kol_metadata(kol, published=True) if i['level'] == 'FAIL']
+                self.assertEqual([], failures)
+
+    def test_new_politics_culture_channels_are_enabled_and_unique(self):
+        """105-124：身份核对过的扩展频道，必须可抓取（active）且元数据无 FAIL。"""
+        for name, (kid, handle, channel_id) in NEW_CHANNELS.items():
+            with self.subTest(channel=name):
+                matches = [kol for kol in self.kols if kol['name'] == name]
+                self.assertEqual(1, len(matches))
+                kol = matches[0]
+                self.assertEqual(kid, kol['id'])
+                self.assertEqual(channel_id, kol['channel_id'])
+                self.assertEqual(f'https://www.youtube.com/channel/{channel_id}', kol['channel_url'])
+                self.assertIs(True, kol['active'])
+                self.assertEqual('YouTube', kol['platform'])
+                self.assertIn(kol['language'], ('中文', '英文'))
+                if handle is not None:
+                    self.assertEqual(handle, kol['handle'])
                 failures = [i for i in check_kol_metadata(kol, published=True) if i['level'] == 'FAIL']
                 self.assertEqual([], failures)
 

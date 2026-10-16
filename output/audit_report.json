@@ -1,11 +1,11 @@
 {
   "summary": {
-    "audited_at": "2026-10-16T15:32:43.129572+00:00",
-    "total_kols": 102,
+    "audited_at": "2026-10-16T16:03:59.999410+00:00",
+    "total_kols": 122,
     "included_kols": 61,
-    "quarantined_kols": 41,
+    "quarantined_kols": 61,
     "pass": 55,
-    "warn": 47,
+    "warn": 67,
     "fail": 0,
     "total_items": 183,
     "mock_items": 0,
@@ -1963,6 +1963,456 @@
       "platform": "YouTube",
       "fans": "N/A",
       "channel_id": "UCfkXa49J_3n7a27Pdf4IEng",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 105,
+      "name": "观视频工作室 Guan Video",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCYfJG6cGfW84FVLuy7semEg",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 106,
+      "name": "观察者网",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCJncdiH3BQUBgCroBmhsUhQ",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 107,
+      "name": "沈逸老师",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCfcPzjuqNxzyyu2ukSBPmeQ",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 108,
+      "name": "黃智賢夜問",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCsgXIOF43ZqgcmLwnKjsndQ",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 109,
+      "name": "赖岳谦TV",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCnrxxRlv2ZSSW4ApuEy8C0w",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 110,
+      "name": "郭正亮頻道",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCSYBgX9pWGiUAcBxjnj6JCQ",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 111,
+      "name": "中国东南卫视官方频道（海峡新干线）",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCN2e8dLY9KnH-B15LyBM7Fg",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "handle 缺失"
+        },
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 112,
+      "name": "歪果仁研究协会 Ychina",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCvVIk8oQ2vnZsCi4vR9O4dg",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 113,
+      "name": "Barrett",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UC1XG7bJnYqta_ezr12WZp7w",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 114,
+      "name": "Cyrus Janssen",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCxEQsjgRRfGWiJJu_PDygxw",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 115,
+      "name": "Daniel Dumbrill",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UC6Bl8MTbW9M9MQoPhxbarpw",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 116,
+      "name": "the JaYoe Nation",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UC8Ykci4MKSSdTJYuYp53G7A",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 117,
+      "name": "Jerry's Take on China",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UC_DHAzg3miuwH9NMEUCY0Ow",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 118,
+      "name": "科技袁人（科技新信号 TechSignal）",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCSgGqt-30oXBq0-n0K-t4Nw",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "handle 缺失"
+        },
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 119,
+      "name": "差评君",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCqlQ5ErufqtQUhkuKj1xngg",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 120,
+      "name": "IC实验室",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCJ1zX4FZA15dwE2olLAO3-w",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 121,
+      "name": "CGTN",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCgrNz-aDmcr2uuto8_DL2jg",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 122,
+      "name": "CCTV中国中央电视台",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCcLK3j-XWdGBnt5bR9NJHaQ",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 123,
+      "name": "China.org.cn 中国网",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UCrYhYcDkTcSFhhDSFpYTFCg",
+      "configured_active": true,
+      "included": false,
+      "mock_items": 0,
+      "altered_titles": 0,
+      "pool_titles": 0,
+      "total_items": 0,
+      "online": [],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "META",
+          "msg": "fans 缺失/未填写"
+        }
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 124,
+      "name": "鳳凰衛視 Phoenix TV",
+      "platform": "YouTube",
+      "fans": "N/A",
+      "channel_id": "UC4vnLYInDvXtLKGOZieMeMw",
       "configured_active": true,
       "included": false,
       "mock_items": 0,
