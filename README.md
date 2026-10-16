@@ -26,7 +26,7 @@
 
 ---
 
-## 🗂️ KOL 精选名单（102 家）
+## 🗂️ KOL 精选名单（122 家）
 
 ### 英文财经巨头 20 席
 | # | 名称 | 平台 | 领域 |
@@ -68,7 +68,25 @@ Kelvin, Swedish Investor, Preston Pysh, PensionCraft, Maverick, Cameron Stewart,
 - 本次只更新频道配置：未抓取并验证的新频道暂列当前产物的 `inactive_kols`，不凭截图补造视频、日期或分析。后续运行流水线时，取得真实内容并通过审计后才入报。
 - 频道 ID、handle 与核对来源见 [频道新增记录](频道新增记录_20261016.md)；截图中的播放量、直播观众数不作为订阅数，新增频道的 `fans` 暂记 `N/A`。
 
-> 📌 **完整数据**：`kol_data.json`（共 102 家，含 handle/channel_id/fans/field/platform 等）
+### 政论 / 人文 / 科技 / 官媒扩展 20 席（2026-10-16）
+
+用户提交 30 个来源，核实后加入 20 席（`#105`–`#124`），其余 10 个来源因身份无法核实暂未加入。
+
+| 板块 | 频道 |
+|---|---|
+| 时政评论 | `观视频工作室`、`观察者网`、`沈逸老师`、`黃智賢夜問`、`赖岳谦TV`、`郭正亮頻道`、`中国东南卫视官方频道（海峡新干线）` |
+| 海外创作者 | `歪果仁研究协会 Ychina`、`Barrett`、`Cyrus Janssen`、`Daniel Dumbrill`、`the JaYoe Nation`、`Jerry's Take on China` |
+| 产业科技商业 | `科技袁人（科技新信号 TechSignal）`、`差评君`、`IC实验室` |
+| 区域与官媒 | `CGTN`、`CCTV中国中央电视台`、`China.org.cn 中国网`、`鳳凰衛視 Phoenix TV` |
+
+- 身份核对以 YouTube 官方 RSS 复核为主（`feeds/videos.xml?channel_id=UC…` 的 feed 标题即频道显示名），
+  Social Blade 频道页 / 官方频道固定链接作为交叉验证；观测到的更新节奏与用户描述不一致处均据实记录。
+- 新记录 `fans` 暂记 `N/A`（不写入第三方订阅数估算），`active: true` 只表示允许抓取，
+  未抓取验证前暂列 `inactive_kols`，不补造标题、日期或分析。
+- 未加入的 10 个来源（陈平眉山论剑、金灿荣频道、周波、保罗在广东、rt、Lee Barrett、Groovy China、
+  雷叔说事、超级老王、大湾区之声）及原因见 [频道新增记录·政论人文扩展](频道新增记录_20261016_政论人文扩展.md)。
+
+> 📌 **完整数据**：`kol_data.json`（共 122 家，含 handle/channel_id/fans/field/platform 等）
 
 ---
 
@@ -155,47 +173,51 @@ python main.py --no-push  # 仅生成；若没有任何可验证内容则失败�
 `src/pushplus.py` · `src/digest.py`
 
 - 接口：`http://www.pushplus.plus/send`
-- 参数：`token` + `title` + `content` (html) + `template=html` + `channel=wechat` + **`topic`（一对多群组编码）**
-- **一对多（默认开启）**：`topic=oai.1`，战报会推给群组 **oai.1** 内的全部订阅者；不带 `topic` 才是单人推送
+- 参数：`token` + `title` + `content` (html) + `template=html` + `channel=wechat` + `topic`（一对多群组编码，默认不传）
+- **一对一（默认）**：不带 `topic`，战报只发给 token 对应的本人
+- **一对多（按需开启）**：`topic=群组编码`，战报会推给该群组内的全部订阅者
 - **内容：自动使用战斗风精简摘要版**（`src/digest.py` 生成，避免频道数量增长时超过 PushPlus 上限）
   - 战斗排版含：⚔️ 多空战场横幅 · 🐂🐻 HP 血条 · 👑 主导阵营与战场风向 · 🏆 多头/空头 MVP · 🔥 多头猛攻 TOP5 · 💣 空头重击 TOP5 · 🛡️ 军团花名册（5 大阵营分组）· 本次隔离/未验证名单
 - 配置方式（优先级递减，token 与 topic 同规则）：
-  1. `python main.py --token YOUR_TOKEN --topic oai.1`
+  1. `python main.py --token YOUR_TOKEN --topic 群组编码`   ← 临时开启一对多
   2. 环境变量 `PUSHPLUS_TOKEN` / `PUSHPLUS_TOPIC`
-  3. `config.yaml` 中 `pushplus_token` / `pushplus_topic`（默认 `oai.1`）
+  3. `config.yaml` 中 `pushplus_token` / `pushplus_topic`（`pushplus_topic` 留空 = 一对一）
 
 ```bash
 # ① 先发一条测试消息验证链路（token/实名/关注公众号/群组是否正常）
-bash push_demo.sh test <你的token>          # 按 config.yaml 的群组 oai.1 一对多发送
-bash push_demo.sh test <你的token> oai.1    # 显式指定群组编码
+bash push_demo.sh test <你的token>          # 一对一发送（默认，发给你自己）
+bash push_demo.sh test <你的token> oai.1    # 显式指定群组编码，改一对多
 bash push_demo.sh test <你的token> self     # 只发给自己（关闭一对多）
 # 返回 code=200 说明链路正常，微信应收到「✅ PushPlus 链路测试成功」
 
 # ② 完整流水线 + 推送
 export PUSHPLUS_TOKEN="你的token"
-python main.py              # 自动抓取 + 分析 + 生成 + 推送（摘要版，默认一对多群组 oai.1）
-python main.py --no-push    # 本地预览不推送
-python main.py --push-only  # 仅推送（复用上次 output/data.json，适合补推/重推）
-python main.py --topic vip  # 换群组编码
-python main.py --self-only  # 关闭一对多，只发给自己
+python main.py                 # 自动抓取 + 分析 + 生成 + 推送（摘要版，默认一对一，只发给你自己）
+python main.py --no-push       # 本地预览不推送
+python main.py --push-only     # 仅推送（复用上次 output/data.json，适合补推/重推）
+python main.py --topic oai.1   # 换群组编码，改为一对多
+python main.py --self-only     # 只发给自己（当前默认行为，可不填）
 ```
 
 > 获取 Token：http://www.pushplus.plus/push1.html  
 > 推送标题示例：`🐙章鱼战场·KOL多空战报 2026年08月16日 | 已验证21/102 主导:空头`。`main.py` 与 `--push-only` 都会在推送前执行真实性审计，不能绕过门禁。
 
-### 👥 一对多（群组 oai.1）
+### 👥 一对多（按需开启，当前默认关闭）
+
+默认是一对一（只发给你自己）。需要群组广播时，任选一种方式填入群组编码：
+`config.yaml` 的 `pushplus_topic`、环境变量 `PUSHPLUS_TOPIC`，或运行时 `--topic 群组编码`。
 
 | 项 | 值 |
 | --- | --- |
-| 群组名称 | `oai.1` |
-| 群组编码（接口 `topic`） | `oai.1` |
-| 默认生效位置 | `config.yaml` → `pushplus_topic` |
+| 原群组名称 | `oai.1` |
+| 原群组编码（接口 `topic`） | `oai.1`（填回即可恢复一对多） |
+| 默认生效位置 | 默认关闭（`config.yaml` → `pushplus_topic` 留空 = 一对一） |
 
 - **建群/取码**：pushplus.plus →「发送消息 → 一对多消息」→ 新建群组，群组编码填 `oai.1`（若你的群组编码与群组名不同，把实际编码填到 `pushplus_topic` 或 `PUSHPLUS_TOPIC`）
 - **拉人订阅**：群组页面「生成二维码」，把二维码发给接收人；对方微信扫码加入后，之后每次战报都会收到
 - **成员侧前提**：仍需关注「PushPlus」公众号 + 完成实名认证，否则收不到
 - **发送日志**：`[PushPlus] 发送中... 一对多·群组 oai.1 | ...`；返回 200 会打印消息流水号（接口异步，流水号用于查最终送达）
-- **留档**：每次推送把 `topic` / `mode`（一对多 / 单人）写进 `output/data.json` 的 `meta.push_result`
+- **留档**：每次推送把 `topic` / `mode`（一对多 / 一对一）写进 `output/data.json` 的 `meta.push_result`
 - **注意**：`channel=webhook` 时 `topic` 按官方文档无效；一对多会按群内人数消耗推送次数，留意 `900`（当日次数超限）
 
 **收不到消息？按以下顺序排查：**
@@ -203,7 +225,7 @@ python main.py --self-only  # 关闭一对多，只发给自己
 1. **微信必须关注「PushPlus」公众号**（服务号，模板消息经它送达）
 2. **必须实名认证**：2024-08 起未实名返回 `905`，无法发送（pushplus.plus 微信扫码实名）
 3. **token 是否有效**：返回 `903` = token 无效，到 pushplus.plus 重新复制，并同步更新仓库 Secret `PUSHPLUS_TOKEN`
-4. **群组是否加入**：一对多只发给群组 `oai.1` 的订阅者；没扫二维码入群的人不会收到（日志里应出现 `一对多·群组 oai.1`）
+4. **群组是否加入**：只在开启一对多时需要检查 —— 一对多只发给该群组的订阅者，没扫二维码入群的人不会收到（日志里应出现 `一对多·群组 <编码>`）；一对一模式则发给 token 本人，与群组无关
 5. **请求次数限制**：相同内容 1 小时最多 3 条；1 分钟最多 5 次；每日超 200 次当日停止（返回 `900`）。在公众号里发送「请求次数」可查询
 6. **接口是异步的**：返回 `200` 只代表服务端收到请求，不代表已送达；若返回 200 但没收到，多为上述 1/2/4 未完成
 
@@ -252,14 +274,14 @@ python -m http.server --directory output 8000 --bind 0.0.0.0
 
 # 2. 配置推送后一键全链路
 export PUSHPLUS_TOKEN=xxxx
-bash push_demo.sh test $PUSHPLUS_TOKEN   # 先测链路（默认发到一对多群组 oai.1）
-python main.py                            # 再正式推送（同样默认一对多）
-python main.py --self-only                # 只想发给自己时
-python main.py --topic 其他群组编码        # 临时换群组
+bash push_demo.sh test $PUSHPLUS_TOKEN   # 先测链路（默认一对一，发给你自己）
+python main.py                            # 再正式推送（同样默认一对一）
+python main.py --self-only                # 同上，显式写法
+python main.py --topic 群组编码            # 临时改用一对多
 ```
 
-> 推送默认走**一对多**：群组编码取自 `config.yaml` 的 `pushplus_topic`（`oai.1`）。
-> 详见下文 [👥 一对多（群组 oai.1）](#-一对多群组-oai1)。
+> 推送默认走**一对一**，只发给 token 对应的本人（`config.yaml` 的 `pushplus_topic` 留空）。
+> 需要一对多时见下文 [👥 一对多（按需开启）](#-一对多按需开启当前默认关闭)。
 
 ---
 
@@ -275,12 +297,12 @@ python main.py --topic 其他群组编码        # 临时换群组
 ```
 
 在 GitHub 仓库 `Settings → Secrets → Actions` 添加 `PUSHPLUS_TOKEN` 即可；
-`PUSHPLUS_TOPIC` 可选 —— 不配置时 CI 会回落到 `config.yaml` 的 `pushplus_topic`（群组 `oai.1`，一对多），
-所以**不加这个 Secret，定时任务也默认走一对多**。
+`PUSHPLUS_TOPIC` 可选 —— 不配置时 CI 会回落到 `config.yaml` 的 `pushplus_topic`（当前留空），
+所以**不加这个 Secret，定时任务默认走一对一**（只发给 token 本人）。
 > ⚠️ 当前仓库里已提交的 `daily.yml` 尚未透传 `PUSHPLUS_TOPIC`（GitHub App 无 `workflows` 权限，改动被远端拒绝）。
 > 那 3 行改动已导出为仓库根目录的 `ci_topic_pair.patch`，由有 `workflows` 权限的账号执行
 > `git apply ci_topic_pair.patch && git commit -am "CI: 透传 PUSHPLUS_TOPIC" && git push` 即可补上。
-> 功能上不影响一对多默认生效（`config.yaml` 的 `oai.1` 会被 CI 直接使用）。
+> 功能上不影响推送模式（`config.yaml` 的 `pushplus_topic` 会被 CI 直接使用，当前留空 = 一对一）。
 > 💡 建议：可将 CI 拆为「生成（`python main.py --no-push`）+ 推送（`python main.py --push-only`）」，
 > 缺 token 时明确报错。改进版 `daily.yml` 见工作区 `.github/workflows/`（需有 `workflows` 权限的账号提交）。
 
@@ -317,7 +339,7 @@ python main.py --topic 其他群组编码        # 临时换群组
 - 增减 KOL：编辑 `kol_data.json`；`active: false` 会强制隔离，`active: true` 仍须通过真实频道与 RSS 验证
 - 调阈值：`config.yaml` → `active_threshold_days`
 - 换 PushPlus 渠道：`channel: webhook` 等（注意 `channel=webhook` 时 `topic` 群组编码无效）
-- 换一对多群组：`config.yaml` → `pushplus_topic`（默认 `oai.1`），或 `PUSHPLUS_TOPIC` / `--topic`；只想发给自己用 `--self-only`
+- 切推送方式：默认一对一（只发给自己）；改一对多 → `config.yaml` 的 `pushplus_topic`（原群组 `oai.1`）、`PUSHPLUS_TOPIC` 或 `--topic 群组编码`
 - 换分析逻辑：在 `src/analyzer.py` 扩充 `BULL/BEAR_KEYWORDS` 或接入 LLM API
 
 ---

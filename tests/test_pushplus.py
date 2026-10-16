@@ -12,10 +12,11 @@ def _ok_response():
 
 
 class TopicResolutionTests(unittest.TestCase):
-    def test_default_topic_is_the_oai_1_group(self):
-        self.assertEqual(DEFAULT_PUSHPLUS_TOPIC, "oai.1")
-        self.assertEqual(pushplus.PUSHPLUS_TOPIC, "oai.1")
-        self.assertEqual(pushplus.resolve_topic(), "oai.1")
+    def test_default_is_one_to_one_self_only(self):
+        """默认一对一：不配置群组编码时只发给自己。"""
+        self.assertEqual(DEFAULT_PUSHPLUS_TOPIC, "")
+        self.assertEqual(pushplus.PUSHPLUS_TOPIC, "")
+        self.assertEqual(pushplus.resolve_topic(), "")
 
     def test_explicit_topic_overrides_default(self):
         self.assertEqual(pushplus.resolve_topic("other.group"), "other.group")
@@ -24,20 +25,24 @@ class TopicResolutionTests(unittest.TestCase):
         for value in ("", "  ", "none", "OFF", "self", "-"):
             self.assertEqual(pushplus.resolve_topic(value), "")
 
-    def test_none_means_use_configured_group(self):
-        self.assertEqual(pushplus.resolve_topic(None), "oai.1")
+    def test_none_means_use_configured_topic(self):
+        """None = 回落到配置；当前配置为留空，因此仍是一对一。"""
+        self.assertEqual(pushplus.resolve_topic(None), "")
+        with patch.object(pushplus, "PUSHPLUS_TOPIC", "oai.1"):
+            self.assertEqual(pushplus.resolve_topic(None), "oai.1")
 
 
 class OneToManyPayloadTests(unittest.TestCase):
-    def test_payload_carries_topic_by_default(self):
+    def test_payload_omits_topic_by_default(self):
+        """默认一对一：请求体不带 topic。"""
         with patch.object(pushplus.requests, "post", return_value=_ok_response()) as post:
             res = pushplus.send_pushplus("tok", "标题", "<p>内容</p>")
         self.assertEqual(res["code"], 200)
         payload = post.call_args.kwargs["json"]
-        self.assertEqual(payload["topic"], "oai.1")
+        self.assertNotIn("topic", payload)
         self.assertEqual(payload["channel"], "wechat")
         self.assertEqual(payload["template"], "html")
-        self.assertEqual(res["mode"], "一对多·群组 oai.1")
+        self.assertEqual(res["mode"], "一对一·仅发给你自己")
 
     def test_topic_override_reaches_payload(self):
         with patch.object(pushplus.requests, "post", return_value=_ok_response()) as post:
@@ -48,11 +53,12 @@ class OneToManyPayloadTests(unittest.TestCase):
         with patch.object(pushplus.requests, "post", return_value=_ok_response()) as post:
             res = pushplus.send_pushplus("tok", "标题", "<p>内容</p>", topic="")
         self.assertNotIn("topic", post.call_args.kwargs["json"])
-        self.assertEqual(res["mode"], "单人·仅发给自己")
+        self.assertEqual(res["mode"], "一对一·仅发给你自己")
 
     def test_webhook_channel_still_sends_topic_with_warning(self):
+        """显式开启一对多后，webhook 渠道仍会带 topic 并给出提示。"""
         with patch.object(pushplus.requests, "post", return_value=_ok_response()) as post:
-            pushplus.send_pushplus("tok", "标题", "<p>内容</p>", channel="webhook")
+            pushplus.send_pushplus("tok", "标题", "<p>内容</p>", channel="webhook", topic="oai.1")
         payload = post.call_args.kwargs["json"]
         self.assertEqual(payload["channel"], "webhook")
         self.assertEqual(payload["topic"], "oai.1")
@@ -77,7 +83,7 @@ class OneToManyPayloadTests(unittest.TestCase):
         with patch.object(pushplus.requests, "post", return_value=resp):
             res = pushplus.send_pushplus("tok", "标题", "<p>内容</p>")
         self.assertEqual(res["code"], 500)
-        self.assertEqual(res["topic"], "oai.1")
+        self.assertEqual(res["topic"], "")
 
 
 class SendReportTopicTests(unittest.TestCase):
@@ -102,9 +108,18 @@ if __name__ == "__main__":
 
 
 class TestMessageTopicTests(unittest.TestCase):
-    def test_test_message_uses_configured_group(self):
+    def test_test_message_defaults_to_self_only(self):
+        """测试消息默认一对一：不带 topic，正文写明一对一。"""
         with patch.object(pushplus.requests, "post", return_value=_ok_response()) as post:
             pushplus.send_test_message("tok")
+        payload = post.call_args.kwargs["json"]
+        self.assertNotIn("topic", payload)
+        self.assertIn("一对一", payload["content"])
+
+    def test_test_message_can_enable_one_to_many(self):
+        """传入群组编码即可临时开启一对多。"""
+        with patch.object(pushplus.requests, "post", return_value=_ok_response()) as post:
+            pushplus.send_test_message("tok", "oai.1")
         payload = post.call_args.kwargs["json"]
         self.assertEqual(payload["topic"], "oai.1")
         self.assertIn("oai.1", payload["content"])

@@ -1,11 +1,11 @@
 #!/bin/bash
 # PushPlus 推送演示脚本
 # 用法：
-#   bash push_demo.sh test [token] [群组编码]   # 发送一条测试消息，验证 token/实名/关注/一对多群组
+#   bash push_demo.sh test [token] [群组编码]   # 发送一条测试消息，验证 token/实名/关注（群组编码可选）
 #   bash push_demo.sh [token]                   # 完整流水线 + 推送战报（摘要版）
 # 或设置环境变量 PUSHPLUS_TOKEN / PUSHPLUS_TOPIC
-# 一对多：默认群组编码取 config.yaml 的 pushplus_topic（群名 oai.1）；
-#         传 self 作为群组编码 = 只发给自己（关闭一对多）
+# 默认一对一：只发给自己（config.yaml 的 pushplus_topic 留空）。
+# 需要一对多：设 PUSHPLUS_TOPIC 或把群组编码作为第 3 个参数传入（如 oai.1）
 
 TOKEN=${1:-$PUSHPLUS_TOKEN}
 TOPIC=${PUSHPLUS_TOPIC:-}
@@ -18,7 +18,7 @@ if [ "$1" = "test" ]; then
     echo "获取方式：http://www.pushplus.plus/push1.html"
     exit 1
   fi
-  echo "🐙 发送测试消息 Token: ${TOKEN:0:6}****** | 群组: ${TOPIC:-（config.yaml 默认 oai.1）} ..."
+  echo "🐙 发送测试消息 Token: ${TOKEN:0:6}****** | 群组: ${TOPIC:-（未指定 = 一对一，只发给自己）} ..."
   if [ -n "$TOPIC" ]; then
     python3 -m src.pushplus --test "$TOKEN" "$TOPIC"
   else
@@ -38,7 +38,7 @@ if [ -z "$TOKEN" ]; then
   exit 0
 fi
 
-echo "🐙 使用 Token: ${TOKEN:0:6}****** 推送中 | 群组: ${TOPIC:-（config.yaml 默认 oai.1）} ..."
+echo "🐙 使用 Token: ${TOKEN:0:6}****** 推送中 | 群组: ${TOPIC:-（未指定 = 一对一，只发给自己）} ..."
 if [ -n "$TOPIC" ]; then
   PUSHPLUS_TOKEN=$TOKEN python main.py --topic "$TOPIC"
 else

@@ -13,8 +13,8 @@
   python main.py --no-push      # 仅生成，不推送
   python main.py --push-only    # 仅推送（复用上次 output/data.json，常用于补推/重推）
   python main.py --token XXX    # 完整流水线 + 推送（指定 token）
-  python main.py --topic oai.1  # 一对多：推给群组编码 oai.1 的全部订阅者（默认值）
-  python main.py --self-only    # 关闭一对多，只发给自己
+  python main.py --topic 群组编码  # 一对多：推给该群组内全部订阅者
+  python main.py --self-only       # 只发给自己（默认行为，不带 --topic 即一对一）
 """
 import json
 import sys
@@ -155,7 +155,7 @@ def run(push: bool = True, token: str = None, push_only: bool = False, strict_au
     if push:
         html_path = OUTPUT_DIR / "report.html"
         group = resolve_topic("" if self_only else topic)
-        audience = f"一对多·群组 {group}（群内订阅者都会收到）" if group else "单人·仅发给自己（未启用一对多）"
+        audience = f"一对多·群组 {group}（群内订阅者都会收到）" if group else "一对一·仅发给你自己"
         print(f"\n[4/4] 📨 审计通过，推送 PushPlus（微信摘要版）→ {audience}")
         title = f"🐙章鱼战场·KOL多空战报 {report_date} | 已验证{len(all_enriched)}/{len(all_enriched)+len(inactive_kols)} 主导:{stats['dominant']}"
         summary = f"真实来源{len(all_enriched)}家 · 🐂{stats['bull']} vs 🐻{stats['bear']} | {engine} | 平均战斗力{stats['avg_power']}"
@@ -177,7 +177,7 @@ def run(push: bool = True, token: str = None, push_only: bool = False, strict_au
                 "code": res.get("code"),
                 "msg": res.get("msg", ""),
                 "topic": group,
-                "mode": "一对多" if group else "单人",
+                "mode": "一对多" if group else "一对一",
                 "pushed_at": datetime.now().isoformat(),
             }
             json_path.write_text(json.dumps(d2, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -211,8 +211,9 @@ if __name__ == "__main__":
     parser.add_argument("--token", type=str, default=None, help="PushPlus token，覆盖环境变量")
     parser.add_argument("--strict-audit", action="store_true", help="不作伪检查门禁：存在伪造/失实内容（FAIL）即退出码非 0（CI 用）")
     parser.add_argument("--topic", type=str, default=None,
-                        help="PushPlus 一对多群组编码，默认取 config.yaml 的 pushplus_topic（oai.1）")
-    parser.add_argument("--self-only", action="store_true", help="关闭一对多，仅推送给自己（不带 topic 参数）")
+                        help="PushPlus 一对多群组编码；默认取 config.yaml 的 pushplus_topic（留空 = 一对一，只发给自己）")
+    parser.add_argument("--self-only", action="store_true",
+                        help="关闭一对多，仅推送给自己（当前默认行为，保留以兼容旧命令）")
     args = parser.parse_args()
     ok = run(push=not args.no_push, token=args.token, push_only=args.push_only, strict_audit=args.strict_audit,
              topic=args.topic, self_only=args.self_only)
