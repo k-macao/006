@@ -1,14 +1,18 @@
 """
 PushPlus 推送模块
 文档：http://www.pushplus.plus/doc/
-支持：单人推送、一对多（群组 topic）、html 模板
+支持：一对一（单人推送，默认）、一对多（群组 topic）、html 模板
 
-一对多（默认）：
-- 接口参数 `topic` = 群组编码；填了就把消息推给该群组内所有订阅者，不填仅发给自己。
-- 本项目默认群组编码 `oai.1`（群名 oai.1），可用 config.yaml `pushplus_topic`、
-  环境变量 `PUSHPLUS_TOPIC` 或 `python main.py --topic 群组编码` 覆盖；
-  `python main.py --self-only` 可临时关掉一对多、只发给自己。
-- 订阅方式：pushplus.plus →「发送消息 → 一对多消息」→ 群组 oai.1 → 生成二维码，
+一对一（默认）：
+- 请求不带 `topic` 参数，消息只发给 token 对应的本人。
+- `config.yaml` 的 `pushplus_topic` / 环境变量 `PUSHPLUS_TOPIC` 留空即一对一；
+  显式传入 `""`、`none`、`off`、`self`、`-` 同样表示只发给自己。
+
+改用一对多（群组广播）：
+- 接口参数 `topic` = 群组编码；填了就把消息推给该群组内所有订阅者。
+- 三种开启方式：config.yaml `pushplus_topic`、环境变量 `PUSHPLUS_TOPIC`、
+  或运行时 `python main.py --topic 群组编码`（原先使用的群组编码为 `oai.1`，群组名 oai.1）。
+- 订阅方式：pushplus.plus →「发送消息 → 一对多消息」→ 目标群组 → 生成二维码，
   订阅者微信扫码加入后才会收到推送。
 - `channel=webhook` 时 `topic` 按官方文档无效，此时仍按单人/渠道配置发送。
 
@@ -53,7 +57,7 @@ def explain_code(code) -> str:
 def resolve_topic(topic: str = None) -> str:
     """归一化一对多群组编码（接口参数 topic）。
 
-    - `None`：用配置默认群组（config.yaml `pushplus_topic` / 环境变量 `PUSHPLUS_TOPIC`，默认 `oai.1`）
+    - `None`：用配置默认（config.yaml `pushplus_topic` / 环境变量 `PUSHPLUS_TOPIC`，默认留空 = 一对一）
     - `""` / `none` / `off` / `self` / `-`：明确关闭一对多，只发给自己
     - 其他：使用该群组编码
     """
@@ -71,7 +75,7 @@ def send_pushplus(token: str, title: str, content: str, template: str = "html",
     - content: html 或 markdown 内容
     - template: html / markdown / json
     - channel: wechat / webhook / cp / mail
-    - topic: 一对多群组编码；None 用配置默认群组（oai.1），传 "" 则退化为单人推送
+    - topic: 一对多群组编码；None 用配置默认（当前留空 = 一对一），传 "" 则只发给自己
     返回接口 JSON 字典（附带 topic / mode 两个本地字段，便于日志与留档）。
     """
     token = token or PUSHPLUS_TOKEN or os.getenv("PUSHPLUS_TOKEN", "")
@@ -87,7 +91,7 @@ def send_pushplus(token: str, title: str, content: str, template: str = "html",
         return {"code": 998, "msg": f"content too long: {n}", "skipped": True}
 
     group = resolve_topic(topic)
-    mode = f"一对多·群组 {group}" if group else "单人·仅发给自己"
+    mode = f"一对多·群组 {group}" if group else "一对一·仅发给你自己"
     data = {
         "token": token,
         "title": title,
@@ -127,7 +131,7 @@ def send_report(html_path: str, title: str, token: str = None, summary: str = ""
     读取本地 html 报告并推送。
     - 若提供 digest_html（精简摘要版），直接推送摘要版（推荐，微信友好且不超限）
     - 否则推送完整 html；若完整 html 超过会员上限则拒绝并给出提示
-    - topic: 一对多群组编码；None 用配置默认群组（oai.1），传 "" 则只发给自己
+    - topic: 一对多群组编码；None 用配置默认（当前留空 = 一对一），传 "" 则只发给自己
     """
     try:
         with open(html_path, "r", encoding="utf-8") as f:
@@ -164,7 +168,7 @@ def send_test_message(token: str = None, topic: str = None) -> dict:
         print("[PushPlus] 未提供 token。用法: python -m src.pushplus --test <token> [群组编码]")
         return {"code": 997, "msg": "no token", "skipped": True}
     group = resolve_topic(topic)
-    audience = f"群组 {group}（一对多，群内订阅者都会收到）" if group else "仅发给你自己（未启用一对多）"
+    audience = f"群组 {group}（一对多，群内订阅者都会收到）" if group else "仅发给你自己（一对一）"
     content = (
         "<div style='font-family:sans-serif;padding:12px;border:3px solid #333;background:#fff'>"
         f"<div style='font-size:18px;font-weight:bold'>✅ PushPlus 链路测试成功</div>"
@@ -184,4 +188,5 @@ if __name__ == "__main__":
         sys.exit(0 if res.get("code") == 200 else 1)
     print("用法：")
     print("  python -m src.pushplus --test <token> [群组编码]   # 发送一条测试消息验证链路")
-    print("  群组编码留空则用 config.yaml 的 pushplus_topic（默认 oai.1，一对多）；传 self 只发给自己")
+    print("  群组编码留空则用 config.yaml 的 pushplus_topic（默认留空 = 一对一，只发给自己）；"
+          "传群组编码则开启一对多")

@@ -10,10 +10,13 @@ TEMPLATE_DIR = ROOT / "templates"
 # 也支持从 config.yaml 读取
 CONFIG_YAML = ROOT / "config.yaml"
 
-# 一对多默认群组：pushplus「发送消息 → 一对多消息」页面创建的群组编码（群名 oai.1）。
-# 需要换成别的群组：改 config.yaml 的 pushplus_topic，或设环境变量 PUSHPLUS_TOPIC，
-# 或运行时 `python main.py --topic 你的群组编码`；只想发给自己用 `--self-only`。
-DEFAULT_PUSHPLUS_TOPIC = "oai.1"
+# 默认推送方式：一对一（只发给自己），因此这里留空。
+# 需要一对多（群组广播）时，任选其一开启：
+#   - 改 config.yaml 的 pushplus_topic
+#   - 设环境变量 PUSHPLUS_TOPIC
+#   - 运行时 `python main.py --topic 你的群组编码`
+# （原先默认的一对多群组编码为 `oai.1`，群组名 oai.1；如需恢复一对多，填回该编码即可。）
+DEFAULT_PUSHPLUS_TOPIC = ""
 
 
 def _load_config_yaml() -> dict:
@@ -63,7 +66,7 @@ def get_int_setting(env_key: str, yaml_key: str = "", default: int = 0) -> int:
 # PushPlus 配置
 PUSHPLUS_TOKEN = get_setting("PUSHPLUS_TOKEN", "pushplus_token")
 PUSHPLUS_URL = get_setting("PUSHPLUS_URL", default="http://www.pushplus.plus/send")
-# 一对多群组编码：填了就把战报推给群组内所有订阅者；留空 = 仅推送给自己（单人推送）
+# 群组编码（一对多）：填了就把战报推给群组内所有订阅者；留空 = 一对一，仅推送给自己
 PUSHPLUS_TOPIC = get_setting("PUSHPLUS_TOPIC", "pushplus_topic", DEFAULT_PUSHPLUS_TOPIC)
 PUSHPLUS_CHANNEL = get_setting("PUSHPLUS_CHANNEL", "pushplus_channel", "wechat")
 PUSHPLUS_TEMPLATE = get_setting("PUSHPLUS_TEMPLATE", "pushplus_template", "html")

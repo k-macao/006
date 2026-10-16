@@ -3,9 +3,11 @@
 # 获取地址：http://www.pushplus.plus/push1.html
 
 pushplus_token: ""  # 留空则读取环境变量 PUSHPLUS_TOKEN
-# 一对多：群组编码（pushplus.plus →「发送消息 → 一对多消息」创建的群组，群名 oai.1）
-# 留空 = 仅推送给自己；也可用环境变量 PUSHPLUS_TOPIC 或 `python main.py --topic 群组编码` 覆盖
-pushplus_topic: "oai.1"
+# 推送方式：默认一对一（只发给自己）
+# 需要一对多（群组广播）时，填入 pushplus.plus →「发送消息 → 一对多消息」创建的群组编码
+# （原先使用的群组为 oai.1，填回 `oai.1` 即可恢复一对多）
+# 也可用环境变量 PUSHPLUS_TOPIC 或 `python main.py --topic 群组编码` 覆盖
+pushplus_topic: ""
 # 可选：推送渠道 wechat / webhook / mail / cp
 pushplus_channel: "wechat"
 pushplus_template: "html"
