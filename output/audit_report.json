@@ -1,19 +1,19 @@
 {
   "summary": {
-    "audited_at": "2026-10-16T16:03:59.999410+00:00",
+    "audited_at": "2026-10-17T06:52:32.693275+00:00",
     "total_kols": 122,
     "included_kols": 61,
     "quarantined_kols": 61,
-    "pass": 55,
-    "warn": 67,
+    "pass": 2,
+    "warn": 120,
     "fail": 0,
     "total_items": 183,
     "mock_items": 0,
     "altered_titles": 0,
     "pool_titles": 0,
     "mock_ratio_pct": 0.0,
-    "online_verified": false,
-    "online_downgraded_404s": 0
+    "online_verified": true,
+    "online_downgraded_404s": 58
   },
   "results": [
     {
@@ -28,9 +28,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCV6KDgJskWaEckne5aPA0aQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 2,
@@ -44,9 +52,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 复验 404（疑似 YouTube 风控拦截，抓取阶段已验证）: UCGy7SkBjcIAgTiwkXEtPnYg"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 3,
@@ -60,9 +76,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCFBpVaKCC0ajGps1vf0AgBg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 4,
@@ -76,9 +100,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCFCEuCsyWP0YkP3CZ3Mr01Q（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 5,
@@ -92,9 +124,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCASM0cgfkJxQ1ICmRilfHLw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 6,
@@ -108,9 +148,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCUvvj5lwue7PspotMDjk5UA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 7,
@@ -124,9 +172,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCbta0n8i6Rljh0obO7HzG9A（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 8,
@@ -140,9 +196,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCrTTBSUr0zhPU56UQljag5A（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 9,
@@ -156,9 +220,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCxgAuX3XZROujMmGphN_scA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 10,
@@ -172,9 +244,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCnMn36GT_H0X-w5_ckLtlgQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 11,
@@ -188,9 +268,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCDXTQ8nWmx_EhZ2v-kp7QxA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 12,
@@ -204,12 +292,19 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
       "issues": [
         {
           "level": "WARN",
           "code": "META",
           "msg": "handle 缺失"
+        },
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCoSw1rKMkCbwzKpkC0OjRKA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
         }
       ],
       "verdict": "WARN"
@@ -226,9 +321,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCgbXT2QuTj4SYxaWCs3vuAw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 14,
@@ -242,9 +345,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCT3EznhW_CNFcfOlyDNTLLw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 15,
@@ -258,9 +369,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCIbslwukNCyVp-XMz_2-gmw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 16,
@@ -274,9 +393,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCigUBIf-zt_DA6xyOQtq2WA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 17,
@@ -290,9 +417,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UChBVf9YnourrEDTsbbwJPRA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 18,
@@ -306,9 +441,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCvSXMi2LebwJEM1s4bz5IBA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 19,
@@ -349,9 +492,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCs60_Z83HU76uygzHRQl0kA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 21,
@@ -365,9 +516,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCVomjkM_t0EcctTWSE1Jvxg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 22,
@@ -381,7 +540,10 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 黄仁勋出手相救，反指大佬出钱买入。【2026-10-16】"
+      ],
       "issues": [],
       "verdict": "PASS"
     },
@@ -397,9 +559,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCOhck8oLoIwSJzmwYMXsSnQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 24,
@@ -550,9 +720,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UC1Lk6WO-eKuYc6GHYbKVY2g（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 31,
@@ -566,12 +744,19 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
       "issues": [
         {
           "level": "WARN",
           "code": "META",
           "msg": "handle 缺失"
+        },
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCWyPo32TSKPr8Py7gb7NhYw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
         }
       ],
       "verdict": "WARN"
@@ -654,9 +839,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCJmaaSJX_PkfUmTuxWbrzLw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 36,
@@ -702,9 +895,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UC9OIwUcx-Uss7xj7s1P5XGw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 39,
@@ -745,9 +946,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCSPYNpQ2fHv9HJ-q6MIMaPw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 41,
@@ -761,7 +970,10 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: WTF Is Happening In The French Bond Mark"
+      ],
       "issues": [],
       "verdict": "PASS"
     },
@@ -799,9 +1011,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCpJRuue8x5Qag2Wz6uAzyjw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 44,
@@ -815,9 +1035,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCJggpN5VY0PWKoOyBBT0R8A（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 45,
@@ -956,9 +1184,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UC8gZZWIWmBuCb_gzC8DUrvw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 52,
@@ -972,9 +1208,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCz1GOaZF_qcROUFCzR-_2iQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 53,
@@ -988,9 +1232,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCCeMdcZw1LJsAGKeoYXZw6A（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 54,
@@ -1004,12 +1256,19 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
       "issues": [
         {
           "level": "WARN",
           "code": "META",
           "msg": "fans 缺失/未填写"
+        },
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UClRaYVzu5DIh3kRZkXIX9WA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
         }
       ],
       "verdict": "WARN"
@@ -1026,9 +1285,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCzM2jQWmoeTvpEw63x5Rsdg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 56,
@@ -1042,9 +1309,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCFgvtFvTFRjqhGC1XfIB02w（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 57,
@@ -1074,9 +1349,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCAUiU6pnaEaTjgTVp6KY0FQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 59,
@@ -1090,9 +1373,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UC-1F7DZmxTd1YZUJZUsA0nw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 60,
@@ -1106,9 +1397,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCFQsi7WaF5X41tcuOryDk8w（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 61,
@@ -1176,9 +1475,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCo2gxyermsLBSCxFHvJs0Zg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 64,
@@ -1240,9 +1547,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCBUH38E0ngqvmTqdchWunwQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 67,
@@ -1256,9 +1571,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCn9_KbNANeyYREePe8YA2DA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 68,
@@ -1272,9 +1595,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCrAC23izk57G7jCBPfdXGkg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 69,
@@ -1288,12 +1619,19 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
       "issues": [
         {
           "level": "WARN",
           "code": "META",
           "msg": "fans 缺失/未填写"
+        },
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCrYc9TEMHjiHNrNl6WpqLbQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
         }
       ],
       "verdict": "WARN"
@@ -1369,9 +1707,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCb_4xq1KgaYkGtxpjkoZrtQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 73,
@@ -1417,9 +1763,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UC6LU7FUBvbFCh_cQasrHZ_Q（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 75,
@@ -1519,9 +1873,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCG6ADYIl4GxaQib1HKIsRNg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 81,
@@ -1535,9 +1897,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UC0lbAQVpenvfA2QqzsRtL_g（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 82,
@@ -1551,9 +1921,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UC45i13dEfEVac2IEJT_Nr5Q（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 83,
@@ -1567,9 +1945,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCwWXGnvVmi-6Sfx2wf8S8tQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 84,
@@ -1583,12 +1969,19 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
       "issues": [
         {
           "level": "WARN",
           "code": "META",
           "msg": "fans 缺失/未填写"
+        },
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCvnLmiWt_zIVIh0zUm_j4Hw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
         }
       ],
       "verdict": "WARN"
@@ -1605,9 +1998,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCK-qc_POQZwWrMg-Pr-oYtg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 86,
@@ -1621,9 +2022,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCe7BLtnYfxTXVTRISlfupSw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 87,
@@ -1637,9 +2046,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UChjHWpmNm-3HbLFkQ3TPXaA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 88,
@@ -1653,9 +2070,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCVNqvJSKVl0bsdb15gKUZfg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 89,
@@ -1669,12 +2094,19 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
       "issues": [
         {
           "level": "WARN",
           "code": "META",
           "msg": "fans 缺失/未填写"
+        },
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UC-b6b7CGlRsdcRS7bXDvTYQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
         }
       ],
       "verdict": "WARN"
@@ -1713,9 +2145,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UC23rnlQU_qE3cec9x709peA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 92,
@@ -1751,9 +2191,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UChYg2EINv5URVkebzlTGbFQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 94,
@@ -1767,9 +2215,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCT3uWFvKLVpRnEealmRwvrw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 95,
@@ -1783,9 +2239,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCGX-lnOzsVjbdzb1VJxmWSg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 96,
@@ -1799,9 +2263,17 @@
       "altered_titles": 0,
       "pool_titles": 0,
       "total_items": 3,
-      "online": [],
-      "issues": [],
-      "verdict": "PASS"
+      "online": [
+        "在线验证：频道页身份一致"
+      ],
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "ONLINE",
+          "msg": "RSS 404，channel_id 无效: UCS1bMmw249R7R0wDjAmE6CA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
+        }
+      ],
+      "verdict": "WARN"
     },
     {
       "id": 97,
