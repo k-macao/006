@@ -1,19 +1,19 @@
 {
   "summary": {
-    "audited_at": "2026-10-17T06:52:32.693275+00:00",
+    "audited_at": "2026-10-18T07:08:57.948739+00:00",
     "total_kols": 122,
-    "included_kols": 61,
-    "quarantined_kols": 61,
-    "pass": 2,
-    "warn": 120,
+    "included_kols": 86,
+    "quarantined_kols": 36,
+    "pass": 55,
+    "warn": 67,
     "fail": 0,
-    "total_items": 183,
+    "total_items": 258,
     "mock_items": 0,
     "altered_titles": 0,
     "pool_titles": 0,
     "mock_ratio_pct": 0.0,
     "online_verified": true,
-    "online_downgraded_404s": 58
+    "online_downgraded_404s": 0
   },
   "results": [
     {
@@ -29,16 +29,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: “America’s Debt Spiral Is Going To Implo"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCV6KDgJskWaEckne5aPA0aQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 2,
@@ -53,16 +48,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: How Your Money Will Be Controlled Now"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 复验 404（疑似 YouTube 风控拦截，抓取阶段已验证）: UCGy7SkBjcIAgTiwkXEtPnYg"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 3,
@@ -77,16 +67,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: What No One Tells You About Hitting $1M"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCFBpVaKCC0ajGps1vf0AgBg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 4,
@@ -101,16 +86,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: How BAD Are Stock Valuations Really?"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCFCEuCsyWP0YkP3CZ3Mr01Q（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 5,
@@ -125,16 +105,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: The Russian Bot Apocalypse"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCASM0cgfkJxQ1ICmRilfHLw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 6,
@@ -149,16 +124,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Why The S&P Being All Time High Is BAD! "
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCUvvj5lwue7PspotMDjk5UA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 7,
@@ -173,16 +143,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 9 Stocks That Could Make You Rich"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCbta0n8i6Rljh0obO7HzG9A（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 8,
@@ -197,16 +162,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Crash, Debt Crisis, AI Bubble Warnings o"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCrTTBSUr0zhPU56UQljag5A（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 9,
@@ -221,16 +181,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: You Have 5 Years to Get Rich Before AI T"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCxgAuX3XZROujMmGphN_scA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 10,
@@ -245,16 +200,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Market Tanking‼️ Do this now"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCnMn36GT_H0X-w5_ckLtlgQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 11,
@@ -269,16 +219,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: The Truth About Leveraged ETFs"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCDXTQ8nWmx_EhZ2v-kp7QxA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 12,
@@ -293,18 +238,14 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: I Gained 1 Million TikTok Followers in 4"
       ],
       "issues": [
         {
           "level": "WARN",
           "code": "META",
           "msg": "handle 缺失"
-        },
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCoSw1rKMkCbwzKpkC0OjRKA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
         }
       ],
       "verdict": "WARN"
@@ -322,16 +263,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Visit AskDolly.com to download Ask Dolly"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCgbXT2QuTj4SYxaWCs3vuAw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 14,
@@ -346,16 +282,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: This Is A Stock Market Warning - Get Rea"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCT3EznhW_CNFcfOlyDNTLLw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 15,
@@ -370,16 +301,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: You don't lose money. You only gain thin"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCIbslwukNCyVp-XMz_2-gmw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 16,
@@ -394,16 +320,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Americans Are Spending More Money — But "
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCigUBIf-zt_DA6xyOQtq2WA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 17,
@@ -418,16 +339,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: The AI Bubble Just Became Dot.Com 2.0 (P"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UChBVf9YnourrEDTsbbwJPRA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 18,
@@ -442,16 +358,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 'Big Short' Investor Explains How the AI"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCvSXMi2LebwJEM1s4bz5IBA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 19,
@@ -493,16 +404,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Is Tesla Stock Cheap or Expensive?"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCs60_Z83HU76uygzHRQl0kA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 21,
@@ -517,16 +423,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 深度！一场魔幻的现实...！美中两种故事，两套底层考题...！"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCVomjkM_t0EcctTWSE1Jvxg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 22,
@@ -560,16 +461,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 🔴【每日要聞】華為還在修踏板，特斯拉的車已經會飛了！中美科技競賽，中國的toke"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCOhck8oLoIwSJzmwYMXsSnQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 24,
@@ -721,16 +617,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 俄羅斯鼠疫其實是一場生物戰！生物武器成為新的政治勒索手段，流氓國家利用瘟疫綁架全"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UC1Lk6WO-eKuYc6GHYbKVY2g（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 31,
@@ -745,18 +636,14 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 美股崩盘！Anthropic揭开整个AI行业最残酷的真相！#crwv #nbis"
       ],
       "issues": [
         {
           "level": "WARN",
           "code": "META",
           "msg": "handle 缺失"
-        },
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCWyPo32TSKPr8Py7gb7NhYw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
         }
       ],
       "verdict": "WARN"
@@ -840,16 +727,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 4 New SGX ETFs Are Now The Cheapest Way "
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCJmaaSJX_PkfUmTuxWbrzLw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 36,
@@ -896,16 +778,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: How I Would Invest £10k, £100k & £1m & W"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UC9OIwUcx-Uss7xj7s1P5XGw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 39,
@@ -947,16 +824,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Debate Feeds Me"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCSPYNpQ2fHv9HJ-q6MIMaPw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 41,
@@ -1012,16 +884,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Roblox Stock: I Did the Math - SBC is OU"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCpJRuue8x5Qag2Wz6uAzyjw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 44,
@@ -1036,16 +903,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: How to Value Stocks: You Already Know Ho"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCJggpN5VY0PWKoOyBBT0R8A（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 45,
@@ -1185,16 +1047,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 「观众投稿分享」20261017：电力工程行业、北欧生物医药博后、985在读博士"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UC8gZZWIWmBuCb_gzC8DUrvw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 52,
@@ -1209,16 +1066,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 【星級輪證】阿里強於大市守穩$105 吼長身Call輪博動能擴闊"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCz1GOaZF_qcROUFCzR-_2iQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 53,
@@ -1233,16 +1085,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 国庆人多钱少、电影暴跌、月饼腰斩！中国人终于清醒了，开始纯过日子！ ｜黄金周｜国"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCCeMdcZw1LJsAGKeoYXZw6A（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 54,
@@ -1257,18 +1104,14 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 解密馬會開季旺丁不旺財之謎｜信報八哥專欄｜財經八聲道｜馬會｜投注額｜應家柏｜北上"
       ],
       "issues": [
         {
           "level": "WARN",
           "code": "META",
           "msg": "fans 缺失/未填写"
-        },
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UClRaYVzu5DIh3kRZkXIX9WA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
         }
       ],
       "verdict": "WARN"
@@ -1286,16 +1129,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 打工皇帝的真實剖白！領展前CEO王國龍親解高薪之謎 管理2000億巨企一思維最重"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCzM2jQWmoeTvpEw63x5Rsdg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 56,
@@ -1310,16 +1148,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Della探房日記｜港漂教育博主的煙花海景宅：從港島到紅磡，來港8年鍾情海景"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCFgvtFvTFRjqhGC1XfIB02w（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 57,
@@ -1350,16 +1183,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 【營商導航】企業出海如何善用香港優勢？遙距開戶、本地專業網絡及財資管理｜恒生銀行"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCAUiU6pnaEaTjgTVp6KY0FQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 59,
@@ -1374,16 +1202,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 《对话》 20261017 杭州：从“六小龙”到“新八骏” |  财经风云"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UC-1F7DZmxTd1YZUJZUsA0nw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 60,
@@ -1398,16 +1221,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 美股 纳指重挫，Anthropic增速失望，IPO估值下调！AI高增长交易动摇！"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCFQsi7WaF5X41tcuOryDk8w（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 61,
@@ -1476,16 +1294,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 今日血亏$7000！美股损失惨重，接下来何去何从？重点个股点评及操作建议"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCo2gxyermsLBSCxFHvJs0Zg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 64,
@@ -1548,16 +1361,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 通胀失控，加息飙升，AI融资泡沫…危机集体爆发！美股扛不住了？"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCBUH38E0ngqvmTqdchWunwQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 67,
@@ -1572,16 +1380,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 正囯级女儿被香港廉署请喝茶！习近平动手了！"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCn9_KbNANeyYREePe8YA2DA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 68,
@@ -1596,16 +1399,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 【老蛮频道】【近年来中国死亡率及发病率分析】关于新冠疫苗的副作用研判"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCrAC23izk57G7jCBPfdXGkg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 69,
@@ -1620,18 +1418,14 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 金正恩的黑客御林軍被抓了現行；他們偷遍全球，中共銀行為何一家沒事?臥底爆料：中國"
       ],
       "issues": [
         {
           "level": "WARN",
           "code": "META",
           "msg": "fans 缺失/未填写"
-        },
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCrYc9TEMHjiHNrNl6WpqLbQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
         }
       ],
       "verdict": "WARN"
@@ -1708,16 +1502,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 2026年付鹏|最新观点：读懂诺贝尔经济学奖：信心和预期重要的要改变长期约束 #"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCb_4xq1KgaYkGtxpjkoZrtQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 73,
@@ -1764,16 +1553,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 川普期中考，台積電期末考，誰被通膨當掉了？｜After Meeting EP. "
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UC6LU7FUBvbFCh_cQasrHZ_Q（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 75,
@@ -1874,16 +1658,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 20261018直播：克拉斯诺夫在行动！川普免除针对俄罗斯新制裁法案；早期投票，"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCG6ADYIl4GxaQib1HKIsRNg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 81,
@@ -1898,16 +1677,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 賴清德總統談央行獨立"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UC0lbAQVpenvfA2QqzsRtL_g（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 82,
@@ -1922,16 +1696,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 股票投資賺太多？LINE Bank狂推3000萬內1.5%活存 樂天銀行取消Pi"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UC45i13dEfEVac2IEJT_Nr5Q（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 83,
@@ -1946,16 +1715,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 洋流慧聚!蘇巧慧拚雙北雙贏!獨家加碼新北耶誕城新規劃!新北市民塞車不便有解?! "
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCwWXGnvVmi-6Sfx2wf8S8tQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 84,
@@ -1970,18 +1734,14 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 盤中破線就賣？還是等收盤？【王老先聲】#騙線洗盤 #重要均線 #收盤"
       ],
       "issues": [
         {
           "level": "WARN",
           "code": "META",
           "msg": "fans 缺失/未填写"
-        },
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCvnLmiWt_zIVIh0zUm_j4Hw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
         }
       ],
       "verdict": "WARN"
@@ -1999,16 +1759,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 0050一千萬沒了，從此放棄定期定額？"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCK-qc_POQZwWrMg-Pr-oYtg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 86,
@@ -2023,16 +1778,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 【財經宜&民視財經週日趴】黃仁勳親自畫下AI安全最後底線! 4檔美國軟體資安巨頭"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCe7BLtnYfxTXVTRISlfupSw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 87,
@@ -2047,16 +1797,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 下一個10年的財富分水嶺？a16z最新報告揭曉：AI真正的贏家可能不是軟體！"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UChjHWpmNm-3HbLFkQ3TPXaA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 88,
@@ -2071,16 +1816,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 台積電幫我們賺了8位數｜慢活夫妻"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCVNqvJSKVl0bsdb15gKUZfg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 89,
@@ -2095,18 +1835,14 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 方舟運算：產業資金流"
       ],
       "issues": [
         {
           "level": "WARN",
           "code": "META",
           "msg": "fans 缺失/未填写"
-        },
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UC-b6b7CGlRsdcRS7bXDvTYQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
         }
       ],
       "verdict": "WARN"
@@ -2146,16 +1882,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: EP706 | 👑"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UC23rnlQU_qE3cec9x709peA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 92,
@@ -2192,16 +1923,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 大升息！元大高股息（0056）配息&績效「重返榮耀」　高股息大哥強在哪？（202"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UChYg2EINv5URVkebzlTGbFQ（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 94,
@@ -2216,16 +1942,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: EP345. AI 基建股大跌中、Meta 衝到最前沿、SPCX 電信商之夢 |"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCT3uWFvKLVpRnEealmRwvrw（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 95,
@@ -2240,16 +1961,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 台股暴跌不知道該怎麼辦？台股為什麼漲跌？練習先用五萬美金模擬投資吧！透過Mitr"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCGX-lnOzsVjbdzb1VJxmWSg（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 96,
@@ -2264,16 +1980,11 @@
       "pool_titles": 0,
       "total_items": 3,
       "online": [
-        "在线验证：频道页身份一致"
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 《盤勢話中話》台股高檔震盪如何應對?三大條件教你『汰弱留強』"
       ],
-      "issues": [
-        {
-          "level": "WARN",
-          "code": "ONLINE",
-          "msg": "RSS 404，channel_id 无效: UCS1bMmw249R7R0wDjAmE6CA（同期大批频道 404，疑似 YouTube 风控拦截，已降级）"
-        }
-      ],
-      "verdict": "WARN"
+      "issues": [],
+      "verdict": "PASS"
     },
     {
       "id": 97,
@@ -2304,12 +2015,15 @@
       "fans": "N/A",
       "channel_id": "UCpjqK881YGOy-5k1juphSiw",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 明星又執兩年第六間! 惠康執14年店! 55年唱片舖相繼結業! 盤點多間人氣餐廳"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2326,12 +2040,15 @@
       "fans": "N/A",
       "channel_id": "UCK7tptUDHh-RYDsdxO1-5QQ",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Here’s Why Treasury Yields Have Defied H"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2348,12 +2065,15 @@
       "fans": "N/A",
       "channel_id": "UCIALMKvObZNtJ6AmdCLP7Lg",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: AI Debt Concerns, Russia Sanctions Waive"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2370,12 +2090,15 @@
       "fans": "N/A",
       "channel_id": "UChqUTb7kYRX8-EiaN3XFrSQ",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Pope Leo walks out of hospital four days"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2392,12 +2115,15 @@
       "fans": "N/A",
       "channel_id": "UCETuQf4lzTrfevoHdSGo8Ew",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 錢錢錢打到嚟 20261016- Part 2/2：跌幅又一成\\香港銀行總結餘\\"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2414,12 +2140,15 @@
       "fans": "N/A",
       "channel_id": "UCr_L9cZdbBU_XDsKDHBBlew",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 避孕套普及導致生育率下降？施永青：破壞部分功能就能對症下藥！| 避孕套 | 生仔"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2436,12 +2165,15 @@
       "fans": "N/A",
       "channel_id": "UCfkXa49J_3n7a27Pdf4IEng",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 特斯拉Roadster這車能飛，背後是這三層真相"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2458,12 +2190,15 @@
       "fans": "N/A",
       "channel_id": "UCYfJG6cGfW84FVLuy7semEg",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 锐评功夫女足、八仙、争洛阳、四渡……有些电影像找了文盲公司在宣发"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2480,12 +2215,15 @@
       "fans": "N/A",
       "channel_id": "UCJncdiH3BQUBgCroBmhsUhQ",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 【两岸圆桌派第48期】诺奖梦碎、选情告急，特朗普遭遇大危机！赖清德蠢蠢欲动要较劲"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2524,12 +2262,15 @@
       "fans": "N/A",
       "channel_id": "UCsgXIOF43ZqgcmLwnKjsndQ",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 2026.10.17  黃智賢夜問  賴惠員斥責賈永婕再道歉能止血？波波醫生、關"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2546,12 +2287,15 @@
       "fans": "N/A",
       "channel_id": "UCnrxxRlv2ZSSW4ApuEy8C0w",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 《琴问谦答》赖岳谦 周玉琴  | 美将忧！中国直捣黄龙！"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2568,12 +2312,15 @@
       "fans": "N/A",
       "channel_id": "UCSYBgX9pWGiUAcBxjnj6JCQ",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 蔡賴路線推上戰 台灣必然烏克蘭化？#shorts @郭正亮頻道 @funseeT"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2590,12 +2337,15 @@
       "fans": "N/A",
       "channel_id": "UCN2e8dLY9KnH-B15LyBM7Fg",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 重申台北“蓝白合” 蒋万安26日竞选总部成立将邀黄国昌#海峡新干线"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2617,12 +2367,15 @@
       "fans": "N/A",
       "channel_id": "UCvVIk8oQ2vnZsCi4vR9O4dg",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Living in China Too Long Gave Me Chargin"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2639,12 +2392,15 @@
       "fans": "N/A",
       "channel_id": "UC1XG7bJnYqta_ezr12WZp7w",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: The West Has NO IDEA How Far Ahead China"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2661,12 +2417,15 @@
       "fans": "N/A",
       "channel_id": "UCxEQsjgRRfGWiJJu_PDygxw",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Economist Peter Schiff Warns America's N"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2683,12 +2442,15 @@
       "fans": "N/A",
       "channel_id": "UC6Bl8MTbW9M9MQoPhxbarpw",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Wallstreet Journal Tried Stopping \"China"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2705,12 +2467,15 @@
       "fans": "N/A",
       "channel_id": "UC8Ykci4MKSSdTJYuYp53G7A",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: I Got a Full Medical Checkup in China fo"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2727,12 +2492,15 @@
       "fans": "N/A",
       "channel_id": "UC_DHAzg3miuwH9NMEUCY0Ow",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: APEC Leaders Summit Discussion with Prof"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2776,12 +2544,15 @@
       "fans": "N/A",
       "channel_id": "UCqlQ5ErufqtQUhkuKj1xngg",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 今年的物化生三項諾獎，多少都帶點邪修氣質"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2798,12 +2569,15 @@
       "fans": "N/A",
       "channel_id": "UCJ1zX4FZA15dwE2olLAO3-w",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 吃了不烧心：红果日活1.68亿的背后 - IC实验室出品"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2820,12 +2594,15 @@
       "fans": "N/A",
       "channel_id": "UCgrNz-aDmcr2uuto8_DL2jg",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Live: Deadly incident sparks major fire "
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2842,12 +2619,15 @@
       "fans": "N/A",
       "channel_id": "UCcLK3j-XWdGBnt5bR9NJHaQ",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 习近平在内蒙古乌兰察布考察时强调 统筹高质量发展和高水平保护 坚定不移走生态优先"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2864,12 +2644,15 @@
       "fans": "N/A",
       "channel_id": "UCrYhYcDkTcSFhhDSFpYTFCg",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: Resilience: The life-or-death trek acros"
+      ],
       "issues": [
         {
           "level": "WARN",
@@ -2886,12 +2669,15 @@
       "fans": "N/A",
       "channel_id": "UC4vnLYInDvXtLKGOZieMeMw",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: 專題節目｜《碳基的幸福生活》“節律篇”：探尋與節律同頻的幸福奧秘🔍用現代醫學、傳"
+      ],
       "issues": [
         {
           "level": "WARN",
