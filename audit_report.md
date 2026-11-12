@@ -1,9 +1,9 @@
 # 🔍 全频道真实性审计报告（不作伪检查模块）
 
-- **审计时间**：2026-11-11T09:04:35.532815+00:00
-- **KOL 目录**：122（本次入报 85，隔离 37）
-- **判定**：PASS 54　|　WARN 68　|　FAIL 0
-- **内容条目**：255 条；模拟/伪链接 0；改写标题 0
+- **审计时间**：2026-11-12T09:33:47.301633+00:00
+- **KOL 目录**：122（本次入报 84，隔离 38）
+- **判定**：PASS 53　|　WARN 69　|　FAIL 0
+- **内容条目**：252 条；模拟/伪链接 0；改写标题 0
 - **在线复核**：已请求（仅复核入报频道）
 
 ## 判定口径
@@ -19,7 +19,7 @@
 |  4 | The Plain Bagel | 是 | YouTube | **PASS** | 0/3 |  |
 |  5 | Patrick Boyle | 是 | YouTube | **PASS** | 0/3 |  |
 |  6 | Meet Kevin | 是 | YouTube | **PASS** | 0/3 |  |
-|  7 | Joseph Carlson | 是 | YouTube | **PASS** | 0/3 |  |
+|  7 | Joseph Carlson | 否 | YouTube | **WARN** | 0/0 |  |
 |  8 | Sven Carlin | 是 | YouTube | **PASS** | 0/3 |  |
 |  9 | Mark Tilbury | 是 | TikTok/YT | **PASS** | 0/3 |  |
 | 10 | Jeremy Lefebvre | 是 | YouTube | **PASS** | 0/3 |  |
