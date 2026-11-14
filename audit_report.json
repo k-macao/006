@@ -1,13 +1,13 @@
 {
   "summary": {
-    "audited_at": "2026-11-13T09:19:32.379504+00:00",
+    "audited_at": "2026-11-14T08:49:27.735373+00:00",
     "total_kols": 122,
-    "included_kols": 83,
-    "quarantined_kols": 39,
-    "pass": 52,
-    "warn": 70,
+    "included_kols": 84,
+    "quarantined_kols": 38,
+    "pass": 53,
+    "warn": 69,
     "fail": 0,
-    "total_items": 249,
+    "total_items": 252,
     "mock_items": 0,
     "altered_titles": 0,
     "pool_titles": 0,
@@ -49,7 +49,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: Why The Iran War Is Profitable"
+        "RSS 有效，最新标题: Why NVIDIA’s Jensen Huang Was Removed"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -68,7 +68,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 9 Things You MUST Do Before 2027 (Financ"
+        "RSS 有效，最新标题: 4 Things You MUST Do Before 2027 (Financ"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -87,7 +87,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: The Numbers Behind Anthropic"
+        "RSS 有效，最新标题: Canada Just Made Some Big Tax Changes"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -125,7 +125,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: Nvidia CEO *JUST* Lawyered Up! 3rd Affai"
+        "RSS 有效，最新标题: Elon JUST Started Selling Cybercabs for "
       ],
       "issues": [],
       "verdict": "PASS"
@@ -160,7 +160,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: Why Value Investing & Especially Why NOW"
+        "RSS 有效，最新标题: Did You Buy NVDA Yesterday? Will You Tod"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -198,7 +198,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: AMD Investors‼️Shocking Development"
+        "RSS 有效，最新标题: We gotta Move NOW‼️"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -261,7 +261,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: Is the Nvidia cheating scandal going to "
+        "RSS 有效，最新标题: Imagine thinking your car was stolen, on"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -280,7 +280,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: The Last Time The Fed Did This, Regular "
+        "RSS 有效，最新标题: Nvidia Just Flipped The Everything Bubbl"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -292,14 +292,17 @@
       "fans": "100W+",
       "channel_id": "UCIbslwukNCyVp-XMz_2-gmw",
       "configured_active": true,
-      "included": false,
+      "included": true,
       "mock_items": 0,
       "altered_titles": 0,
       "pool_titles": 0,
-      "total_items": 0,
-      "online": [],
+      "total_items": 3,
+      "online": [
+        "在线验证：频道页身份一致",
+        "RSS 有效，最新标题: WHY Looking Poor Is IMPORTANT"
+      ],
       "issues": [],
-      "verdict": "WARN"
+      "verdict": "PASS"
     },
     {
       "id": 16,
@@ -399,7 +402,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: APP vs. RDDT: Which Advertising  Stock  "
+        "RSS 有效，最新标题: Is NVIDIA cheap or expensive at $161?"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -418,7 +421,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 洗牌时刻！看懂资本局中局！杀人诛心！ +  寒蝉效应！"
+        "RSS 有效，最新标题: 刚松口气又被吓醒。。。股市正低估一场海啸！"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -437,7 +440,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 英伟达千亿大换手，特斯拉盘中急升。【2026-11-12】"
+        "RSS 有效，最新标题: 止跌不稳的英伟达，是否值得加仓？【2026-11-13】"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -456,7 +459,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 🔴【每日要聞】黃仁勳辭職！現實版《紙牌屋》上演，一天一個黑料精準投餵，黃仁勳到底"
+        "RSS 有效，最新标题: 🔴【每日要聞】黃仁勳下台，一個時代的落幕！英偉達政變，對整個AI行業影響如何？微"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -631,7 +634,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 黄仁勋辞职！一场精心策划的做空局，资本、权力博弈、董事会！#nvda"
+        "RSS 有效，最新标题: 美股 英伟达的未来，下周走势，财报前瞻，全网最透彻分析 #nvda"
       ],
       "issues": [
         {
@@ -773,7 +776,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: Is the AI Bubble Popping? Market Sell-of"
+        "RSS 有效，最新标题: Is the AI Bubble Popping? It’s Certainly"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -1042,7 +1045,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 「花旗」20261105：“二十一大”之前，没有政策刺激和制度改革的预期，北京路"
+        "RSS 有效，最新标题: 「观众投稿分享」20261114：计算机专业应届生、辗转三个行业的00后、低空经"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -1061,7 +1064,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 【開市Talk】黃仁勳辭任英偉達 湯麗鴻：國產芯片受惠 大型科網受累｜看好：天數"
+        "RSS 有效，最新标题: 【星級輪證】小米Gamma Exposure偏正數 27 5元邊緣值博短期反彈！"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -1080,7 +1083,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 男方失业超过一年，女方提出离婚概率超80％？男方失业后跑外卖，夫妻对话把网友看破"
+        "RSS 有效，最新标题: 【墙内被删】陈丹青炸裂发言：新政府一直在倒退。我只能闭嘴，怒骂北京教育官员CTM"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -1099,7 +1102,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 輝達出事 台積電遭殃？台股單一 台灣經濟危｜信報鄧傳鏘專欄｜老總平常談｜台灣股市"
+        "RSS 有效，最新标题: 煞停數據中心投資 美國勢陷衰退｜信報習廣思專欄｜信筆攻略｜美國中期選舉｜特朗普｜"
       ],
       "issues": [
         {
@@ -1124,7 +1127,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 黃仁勳即時辭職！再爆偷食副總裁人妻 董事局不忍了！臨時CEO係咩料？傳Tim C"
+        "RSS 有效，最新标题: 黃仁勳辭職內幕曝光 怒罵自己是「人渣」！再爆第三段婚外情 Nvidia員工聯署要"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -1143,7 +1146,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 逆市純利狂升1.6倍！大快活靠打造「Gym友飯堂」逆風翻盤？｜《投資撈過界》#大"
+        "RSS 有效，最新标题: 幣安失竊逾60億美元會爆煲？蔡嘉民傳授避險公式🔐｜蔡嘉民 Calvin【美股Fo"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -1178,7 +1181,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 【散戶奇兵】11月13日 星期五丨連港股都比英偉達拖累 風波點樣平息 幾時撈得過"
+        "RSS 有效，最新标题: 【智識做老闆-營商導航】企業綠色轉型有助提升競爭力 - 節能管理、設備升級與綠色"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -1197,7 +1200,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 像吹气球一样建粮仓！最快20分钟，一座粮食气膜仓就可吹膜成型 #财经看点 #fi"
+        "RSS 有效，最新标题: 《央视财经评论》 20261113 咖啡产业“强链”向新 赋能美好生活 |  财"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -1216,7 +1219,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 美股 黄仁勋辞职，散户抄底！NVDA持仓计划补充！QQQ空头3年新高，对冲基金低"
+        "RSS 有效，最新标题: 美股 循环信贷、梯云纵裂痕！半导体全军覆没！黄仁勋辞职，有融资机构要跑！ AMD"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -1375,7 +1378,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 深度！老黄翻车，全世界都低估了灾难性的后果！为啥老黄翻车，马斯克没事？共匪女谍这"
+        "RSS 有效，最新标题: 老黄走了，中国慌了！华为成众矢之的！美国猎巫行动是如何展开的？"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -1413,7 +1416,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 黃仁勳辭職！他為什麼必須離開英偉達？黃樂公司的四面紅旗，與「四天成為英偉達夥伴之"
+        "RSS 有效，最新标题: 黃樂間諜事件，要翻案了？財長貝森特電視上對商務部長開火：「筆在商務部手裡」！魯特"
       ],
       "issues": [
         {
@@ -1653,7 +1656,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 20261113直播：黄仁勋残局：为何非要开了他、‘华人’价值观、政府责任、进一"
+        "RSS 有效，最新标题: 20261114直播：黄仁勋残局：我就是个混蛋、更多爆料、操盘手：对华鹰派、留下"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -1710,7 +1713,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 高捷O9站聯開案 打造運動樂活新都心"
+        "RSS 有效，最新标题: 【下班國際線】黃仁勳辭職震撼輝達！台積電、AI供應鏈誰先受傷？劉佩真揭AI晶片戰"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -1729,7 +1732,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 利空出盡?｜【浦男搜股】EP.420"
+        "RSS 有效，最新标题: 聯電能買嗎？聯發科漲停有戲？台玻新天價？南亞看這條線！2026/11/13【老王"
       ],
       "issues": [
         {
@@ -1773,7 +1776,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 【宜起自由Bar 下集】賺到千萬財富，卻差點失去人生自由！秦老闆自曝年輕渣男史："
+        "RSS 有效，最新标题: 黃仁勳請辭台股狂噴!輝達換帥供應鏈沒利空嗎?"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -1811,7 +1814,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 沒有黃仁勳的輝達行嗎？ #nvidia #美股"
+        "RSS 有效，最新标题: 黃仁勳掰了！AI產業完了？輝達也毀了？"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -1877,7 +1880,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: EP713 | 🌲"
+        "RSS 有效，最新标题: EP714 | 🥏"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -1937,7 +1940,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: EP353. 黃仁勳被逼到辭職、ANT IPO 最新消息、Grok Bot 成本"
+        "RSS 有效，最新标题: 連高手都不確定怎麼投資 AI 才能賺錢？價值投資宗師 Howard Marks "
       ],
       "issues": [],
       "verdict": "PASS"
@@ -1972,7 +1975,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 繼承房產有房貸怎麼辦? 房地合一稅四大條件解析【理財最錢線】【胡睿涵、林佩璇、鄭"
+        "RSS 有效，最新标题: 孩子有零用錢後怎麼教? 財商三步驟 教孩子正確理財"
       ],
       "issues": [],
       "verdict": "PASS"
@@ -2013,7 +2016,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 聞到浸𤓓味, 減對中國及香港依賴? 匯豐秘密「Project Sirena」曝光"
+        "RSS 有效，最新标题: 黃仁勳一倒 中國AI即刻斷芯? 阿里騰訊一週蒸發5千億 智譜兩日瀉近兩成｜30億"
       ],
       "issues": [
         {
@@ -2038,7 +2041,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: Why 'Grand Theft Auto VI' Is Going to Ca"
+        "RSS 有效，最新标题: FAA Lifts Nationwide Groundstop That Dis"
       ],
       "issues": [
         {
@@ -2063,7 +2066,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: Tech Tries to Soldier On Without Huang: "
+        "RSS 有效，最新标题: Wall Street Week | Nvidia Shakeup, Midwe"
       ],
       "issues": [
         {
@@ -2088,7 +2091,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: LIVE: Climate Action Network press confe"
+        "RSS 有效，最新标题: LIVE: Pope Leo vists Peruvian city where"
       ],
       "issues": [
         {
@@ -2113,7 +2116,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 政讀班 - 20261113 - 沒有黃仁勳 沒有輝達 沒有AI｜我繼續持有NV"
+        "RSS 有效，最新标题: 裸聊 第340集全棍篇「成人展不可抗力取消、黃仁勳黃樂傾芯事、浮台騙子、呃阿婆食"
       ],
       "issues": [
         {
@@ -2138,7 +2141,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 黃仁勳瞞特朗普向中國賣晶片？中美或出現新一輪晶片爭奪？出軌醜聞爆發由國安背後精心"
+        "RSS 有效，最新标题: 黃仁勳出軌醜聞是民主黨復仇計謀？施永青：真正打擊目標是眼中釘馬斯克！| 特朗普 "
       ],
       "issues": [
         {
@@ -2163,7 +2166,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 最新：黃仁勳辭職！被爆二度出軌女下屬，董事會為何要罷免他？比「涉嫌間諜」還嚴重嗎"
+        "RSS 有效，最新标题: 黃仁勳辭職，解決了什麼？沒解決什麼？輝達系接下來會怎樣？"
       ],
       "issues": [
         {
@@ -2188,7 +2191,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 杰弗里·萨克斯：欧美妄图阻止发展中国家进口中国产品，还怪中国产能过剩？"
+        "RSS 有效，最新标题: 中国媒体不抢着发声，难道指望西方施舍你吗？| 鲁迅“友邦惊诧”的含金量还在上升"
       ],
       "issues": [
         {
@@ -2260,7 +2263,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 2026/11/13黃智賢夜問1892集直播  黃仁勳辭職將面對國會跟司法！塵埃"
+        "RSS 有效，最新标题: 2026.11.13  黃智賢夜問  羅大佑鞏固深藍基本盤！蔣萬安週日合體三字經"
       ],
       "issues": [
         {
@@ -2285,7 +2288,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 《琴问谦答》赖岳谦 周玉琴 精选  | 鲁拉抓牢稀土！川普梦碎！"
+        "RSS 有效，最新标题: 《琴定天下》赖岳谦 周玉琴 精选  | 川普要有定见！查谁在暗搞？"
       ],
       "issues": [
         {
@@ -2310,7 +2313,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 2026.11.11 專訪吳宗憲！總統級資源重壓 走新路力抗新潮流【亮哥專訪｜郭"
+        "RSS 有效，最新标题: 蔡英文回應羅大佑遭網友打臉大逆風！@funseeTW @郭正亮頻道"
       ],
       "issues": [
         {
@@ -2440,7 +2443,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: They Said Only China Purges Tech Billion"
+        "RSS 有效，最新标题: DOJ Admits \"No Spy\" — Right After Nvidia"
       ],
       "issues": [
         {
@@ -2490,7 +2493,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: The Husband behind the Huang/Huang Affai"
+        "RSS 有效，最新标题: How US media LIES and gets away with it"
       ],
       "issues": [
         {
@@ -2592,7 +2595,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: Seeing is believing: AI glasses provide "
+        "RSS 有效，最新标题: Live: APEC Now – Openness"
       ],
       "issues": [
         {
@@ -2617,7 +2620,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 芦花漫成柔软雪浪，《诗经》里的“蒹葭”在大盈江具象化了 | CCTV"
+        "RSS 有效，最新标题: 【Full】解码“中华第一盘”372字铭文！品读与《史记》互证的“青铜史书” |"
       ],
       "issues": [
         {
@@ -2642,7 +2645,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: Through Mountains and Beneath the Sea: A"
+        "RSS 有效，最新标题: How does a station take care of the peop"
       ],
       "issues": [
         {
@@ -2667,7 +2670,7 @@
       "total_items": 3,
       "online": [
         "在线验证：频道页身份一致",
-        "RSS 有效，最新标题: 【直播回顧】鳳凰全球直擊LIVE｜中國新能源車海外熱賣 為何頻遭貿易壁壘⁉️ A"
+        "RSS 有效，最新标题: 【直播回顧】鳳凰全球直擊LIVE｜中國人形機器人出貨量佔全球近九成‼️深圳拼量產"
       ],
       "issues": [
         {
