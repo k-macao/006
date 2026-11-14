@@ -1,9 +1,9 @@
 # 🔍 全频道真实性审计报告（不作伪检查模块）
 
-- **审计时间**：2026-11-13T09:19:32.379504+00:00
-- **KOL 目录**：122（本次入报 83，隔离 39）
-- **判定**：PASS 52　|　WARN 70　|　FAIL 0
-- **内容条目**：249 条；模拟/伪链接 0；改写标题 0
+- **审计时间**：2026-11-14T08:49:27.735373+00:00
+- **KOL 目录**：122（本次入报 84，隔离 38）
+- **判定**：PASS 53　|　WARN 69　|　FAIL 0
+- **内容条目**：252 条；模拟/伪链接 0；改写标题 0
 - **在线复核**：已请求（仅复核入报频道）
 
 ## 判定口径
@@ -27,7 +27,7 @@
 | 12 | Erika Kullberg | 是 | TikTok/YT | **WARN** | 0/3 | handle 缺失 |
 | 13 | Vivien Tu | 是 | TikTok/YT | **PASS** | 0/3 |  |
 | 14 | Jaspreet Singh | 是 | YouTube | **PASS** | 0/3 |  |
-| 15 | Investing with Rose | 否 | YouTube | **WARN** | 0/0 |  |
+| 15 | Investing with Rose | 是 | YouTube | **PASS** | 0/3 |  |
 | 16 | ClearValue Tax | 是 | YouTube | **PASS** | 0/3 |  |
 | 17 | Everything Money | 是 | YouTube | **PASS** | 0/3 |  |
 | 18 | New Money | 是 | YouTube | **PASS** | 0/3 |  |
