@@ -1,9 +1,9 @@
 # 🔍 全频道真实性审计报告（不作伪检查模块）
 
-- **审计时间**：2026-11-25T11:03:18.878984+00:00
-- **KOL 目录**：122（本次入报 84，隔离 38）
-- **判定**：PASS 53　|　WARN 69　|　FAIL 0
-- **内容条目**：252 条；模拟/伪链接 0；改写标题 0
+- **审计时间**：2026-11-26T10:40:26.047314+00:00
+- **KOL 目录**：122（本次入报 83，隔离 39）
+- **判定**：PASS 52　|　WARN 70　|　FAIL 0
+- **内容条目**：249 条；模拟/伪链接 0；改写标题 0
 - **在线复核**：已请求（仅复核入报频道）
 
 ## 判定口径
@@ -55,7 +55,7 @@
 | 40 | Financial Diet | 是 | YouTube | **PASS** | 0/3 |  |
 | 41 | Maverick of Wall Street | 是 | YouTube | **PASS** | 0/3 |  |
 | 42 | Daniel Pronk | 否 | YouTube | **WARN** | 0/0 | channel_id 缺失；运行时必须从真实频道页解析，失败则隔离 |
-| 43 | Cameron Stewart | 是 | YouTube | **PASS** | 0/3 |  |
+| 43 | Cameron Stewart | 否 | YouTube | **WARN** | 0/0 |  |
 | 44 | Fast Graphs (Chuck Carne | 是 | YouTube | **PASS** | 0/3 |  |
 | 45 | The Nomad Wallstreet | 否 | YouTube | **WARN** | 0/0 | channel_id 缺失；运行时必须从真实频道页解析，失败则隔离 |
 | 46 | DeepValue | 否 | Reddit (u/) | **WARN** | 0/0 |  |
